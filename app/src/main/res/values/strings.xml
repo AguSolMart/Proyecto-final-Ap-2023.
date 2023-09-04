@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">APPcomp</string>
+    <string name="editText1">Primer texto</string>
+    <string name="editText2">Segundo texto</string>
+    <string name="btn1">Comparar</string>
+    <string name="textView">Respuesta</string>
+    <string name="respuesta">Respuesta</string>
+</resources>

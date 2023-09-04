@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>MainActivity.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainActivity.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.curso.android.app.practica.appcomp</span>
+
+<span class="s1">import android.os.Bundle</span>
+<span class="s1">import android.widget.Button</span>
+<span class="s1">import android.widget.EditText</span>
+<span class="s1">import android.widget.TextView</span>
+<span class="s1">import androidx.appcompat.app.AppCompatActivity</span>
+
+<span class="s0">class </span><span class="s1">MainActivity : AppCompatActivity() {</span>
+
+
+    <span class="s1">override </span><span class="s0">fun </span><span class="s1">onCreate(savedInstanceState: Bundle?) {</span>
+        <span class="s0">super</span><span class="s1">.onCreate(savedInstanceState)</span>
+        <span class="s1">setContentView(R.layout.activity_main)</span>
+
+        <span class="s0">val </span><span class="s1">text1 : EditText = findViewById(R.id.editText1)</span>
+        <span class="s0">val </span><span class="s1">et1:String=text1.text.toString()</span>
+        <span class="s0">val </span><span class="s1">text2 : EditText = findViewById(R.id.editText2)</span>
+        <span class="s0">val </span><span class="s1">et2:String=text2.text.toString()</span>
+        <span class="s0">val </span><span class="s1">respuesta: TextView = findViewById(R.id.textView1)</span>
+        <span class="s0">val </span><span class="s1">resp:String=respuesta.text.toString()</span>
+
+        <span class="s0">fun </span><span class="s1">play(respuesta: TextView)</span>
+        <span class="s1">{            </span><span class="s0">if</span><span class="s1">(et1 == et2)</span>
+            <span class="s1">respuesta.text = respuesta.text.toString()</span>
+
+        <span class="s1">}</span>
+        <span class="s1">findViewById&lt;Button?&gt;(R.id.btn1).setOnClickListener {</span>
+            <span class="s1">play(respuesta)</span>
+            <span class="s1">println(resp)</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
